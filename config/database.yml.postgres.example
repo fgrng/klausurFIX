@@ -1,0 +1,23 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: klausurFIX_development
+  pool: 5
+  username: USERNAME
+  password: PASSWORD
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: klausurFIX_test
+  pool: 5
+  username: USERNAME
+  password: PASSWORD
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: klausurFIX_production
+  pool: 5
+  username: USERNAME
+  password: PASSWORD

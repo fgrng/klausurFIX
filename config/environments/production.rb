@@ -42,7 +42,7 @@ Rails.application.configure do
   # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for NGINX
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
-  # config.force_ssl = true
+  config.force_ssl = true
 
   # Use the lowest log level to ensure availability of diagnostic information
   # when problems arise.
@@ -76,4 +76,27 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # Configure SMTP Settings for action mailer.
+  config.action_mailer.default_url_options = { :host => Rails.application.config_for(:basic)[:host] }
+  config.action_mailer.default_options = { :from => Rails.application.config_for(:basic)[:mailer_default_from] }
+  config.action_mailer.delivery_method = :smtp
+  #
+  if Rails.application.config_for(:basic)[:mailer_auth].present?
+    config.action_mailer.smtp_settings = {
+      :address        => Rails.application.config_for(:basic)[:mailer_smtp_host],
+      :port           => Rails.application.config_for(:basic)[:mailer_smtp_port],
+      :authentication => Rails.application.config_for(:basic)[:mailer_auth],
+      :user_name      => Rails.application.config_for(:basic)[:mailer_user],
+      :password       => Rails.application.config_for(:basic)[:mailer_pw],
+      :enable_starttls_auto => Rails.application.config_for(:basic)[:mailer_startls]
+    }
+  else
+    config.action_mailer.smtp_settings = {
+      :address        => Rails.application.config_for(:basic)[:mailer_smtp_host],
+      :port           => Rails.application.config_for(:basic)[:mailer_smtp_port],
+      :enable_starttls_auto => Rails.application.config_for(:basic)[:mailer_startls]
+    }
+  end
+
 end
