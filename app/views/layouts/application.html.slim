@@ -1,5 +1,5 @@
 doctype html
-html lang="de"
+html[lang=I18n.locale]
   head
     meta name="charset" content="utf-8"
     meta name="viewport" content="width=device-width, initial-scale=1"
@@ -14,8 +14,9 @@ html lang="de"
   body 
     nav.navbar.navbar-fixed-top.navbar-light.bg-faded
       = link_to "klausurFIX", root_path, class: "navbar-brand"
+      = render 'layouts/navbar/navbar'
+
+    = render 'layouts/flash/flash'
+
     .container-fluid
       = yield
-
-  
-

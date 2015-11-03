@@ -1,0 +1,40 @@
+# Basic Configuration File for klausurFIX rails app.
+# Be sure to restart your server when you modify this file.
+
+# ---
+
+production:
+  host: example.com
+  port: 80
+
+  mailer_default_from: no-reply@example.com
+
+  mailer_smtp_host: smtphost.com
+  mailer_smtp_port: 587
+  mailer_auth: :plain
+  mailer_user: username@smtphost.com
+  mailer_pw: super_secure_password
+  mailer_startls: true
+
+# ---
+
+development:
+  host: localhost
+  port: 3000
+
+  mailer_default_from: no-reply@example.com
+
+  mailer_smtp_host: smtphost.com
+  mailer_smtp_port: 587
+  mailer_auth: :plain
+  mailer_user: username@smtphost.com
+  mailer_pw: super_secure_password
+  mailer_startls: true
+
+# ---
+
+test:
+  host: localhost
+  port: 3000
+  mailer_default_from: no-reply@example.com
+

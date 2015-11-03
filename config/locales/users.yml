@@ -1,0 +1,63 @@
+de:
+  signin_user_not_found: "Nutzername oder Emailadresse wurde nicht gefunden. Bitte überprüfen Sie Ihre Eingabe."
+  signin_user_not_valid_email: "Ihre Emailadresse ist noch nicht validiert."
+  signin_user_wrong_password: "Das eingegebene Password ist nicht korrekt. Bitte überprüfen Sie Ihre Eingabe."
+  signin_user_resend_new_email_request: "Bestätigungslink erneut senden."
+  signin_params_missing: "Bei der Übertragung Ihrer Eingaben ist ein Fehler aufgetreten. Bitte versuchen sie es erneut."
+  sign_out: "Sie wurden erfolgreich abgemeldet."
+
+  users_create_success: "Benutzer*in wurde erfolgreich angelegt. Eine Email mit weiteren Instruktionen wurde versendet."
+  users_update_success: "Benutzer*in wurde erfolgreich aktualisiert."
+  users_destroy_success: "Benutzer*in wurde erfolgreich gelöscht."
+  users_destroy_failure: "Benutzer*in konnte nicht gelöscht werden."
+
+  valid_email_request_subject: "Email-Adresse verifizieren"
+  valid_email_success: "Emailadresse wurde erfolgreich validiert. Sie können sich nun anmelden."
+  valid_email_error: "Emailadresse konnte nicht validiert werden."
+  valid_email_resend: "Ein neuer Bestätigungslink wurde versendet. Bitte überprüfen Sie Ihren Posteingang."
+  valid_email_resend_already_valid: "Die Emailadresse wurde bereits erfolgreich validiert."
+  valid_email_params_missing: "Bei der Übertragung Ihrer Eingaben ist ein Fehler aufgetreten. Bitte versuchen sie es erneut."
+
+  reset_password_request_subject: "Neues Passwort setzen"
+  reset_password_edit_params_missing: "Bei der Übertragung Ihrer Eingaben ist ein Fehler aufgetreten. Bitte versuchen sie es erneut."
+  reset_password_update_params_missing: "Bei der Übertragung Ihrer Eingaben ist ein Fehler aufgetreten. Bitte versuchen sie es erneut."
+  reset_password_create_params_missing: "Bei der Übertragung Ihrer Eingaben ist ein Fehler aufgetreten. Bitte versuchen sie es erneut."
+  reset_password_nousertoken_error: "Es wurde keine Nutzer*in gefunden."
+  reset_password_nouser_error: "Nutzername oder Emailadresse wurde nicht gefunden. Bitte überprüfen Sie Ihre Eingabe."
+  reset_password_old_error: "Dieser Link zum Setzen eines neuen Passworts ist abgelaufen."
+
+  reset_password_created: "Sie haben ein neues Passwort angefordert. Eine Email mit weiteren Instruktionen wurde versendet."
+  reset_password_success: "Neues Passwort wurde gesetzt. Sie können Sich nun anmelden."
+
+
+
+en:
+  signin_user_not_found: "Could not find username or email address. Please check your credentials."
+  signin_user_not_valid_email: "Your email address is not validated."
+  signin_user_wrong_password: "You provided a wrong password. Please check your credentials."
+  signin_user_resend_new_email_request: "Request new confirmation mail."
+  signin_params_missing: "The transaction of your credentials has failed. Please try again."
+  sign_out: "You have been signed out successfully."
+
+  users_create_success: "User was successfully created. Please check your inbox for further instructions."
+  users_update_success: "User was successfully updated."
+  users_destroy_success: "User was successfully deleted."
+  users_destroy_failure: "Could not delete user."
+
+  valid_email_request_subject: "Verify email address"
+  valid_email_success: "Email address was succesfully validated. You may sign in now."
+  valid_email_error: "Email address could not be validated."
+  valid_email_resend: "A new email validation link was succesfully created. Please check your inbox."
+  valid_email_resend_already_valid: "Email address already validated."
+  valid_email_params_missing: "The transaction of your validation token has failed. Please try again."
+
+  reset_password_request_subject: "Set new password"
+  reset_password_edit_params_missing: "The transaction of your reset password token has failed. Please try again."
+  reset_password_update_params_missing: "The transaction of your password credentials has failed. Please try again."
+  reset_password_create_params_missing: "The transaction of your credentials has failed. Please try again."
+  reset_password_nousertoken_error: "There is no user with this reset password token."
+  reset_password_nouser_error: "Could not find username or email address. Please check your credentials."
+  reset_password_old_error: "Password reset token has expired."
+
+  reset_password_created: "New password has been requested. Please check your inbox for further instructions."
+  reset_password_success: "Password has been changed. You may sign in now."

@@ -1,0 +1,9 @@
+.container-fluid
+  - flash.each do |key, value|
+    = content_tag :div, class: "alert alert-#{key} alert-dismissible fade in" do
+      = value
+      button.close[type="button" data-dismiss="alert" aria-label="Close"]
+        span[aria-hidden="true"]
+          | &times;
+        span.sr-only
+          | Close

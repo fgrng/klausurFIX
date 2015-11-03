@@ -1,3 +1,4 @@
+# ===============
 # === Gemfile ===
 # ===============
 
@@ -7,11 +8,22 @@ source 'https://rubygems.org'
 # --- Base
 gem 'rails', '4.2.1'
 
-# --- Webserver
-gem 'thin'
+# =================
+# === Configure ===
+# =================
 
 # --- Database
 gem 'sqlite3'
+# gem 'pg'
+# gem 'mysql2'
+
+# --- Webserver
+# gem 'fcgi'
+gem 'thin'
+
+# =================
+# =================
+# =================
 
 # --- JavaScript
 gem 'jquery-rails'
@@ -39,6 +51,7 @@ end
 gem 'rails-i18n'
 
 # --- Other gems
+gem 'bcrypt', '~> 3.1.7'
 gem 'turbolinks'
 gem 'slim-rails'
 gem 'draper', '~> 1.3'
@@ -58,4 +71,3 @@ end
 
 group :production do
 end
-

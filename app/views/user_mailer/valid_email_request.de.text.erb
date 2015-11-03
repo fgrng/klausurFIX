@@ -1,0 +1,10 @@
+Hallo <%= @user.username %>,
+
+für Sie wurde auf klausurFIX ein Account angelegt. Um diesen nutzen zu können, müssen Sie bestätigen, dass Sie die dort registrierte Email-Adresse abrufen können. Bitte klicken sie dazu auf den folgendem Link.
+
+  <%= confirm_valid_email_request_url(id: @user.valid_email_token, :protocol => "https") %>
+
+Sollten Sie keinen Account auf klausurFIX angelegt haben, können Sie diese Email einfach ignorieren.
+
+Mit freundlichem Gruß
+das klausurFIX-Team

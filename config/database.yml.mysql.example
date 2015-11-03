@@ -1,0 +1,26 @@
+development:
+  adapter: mysql2
+  encoding: utf8
+  database: klausurFIV_development
+  username: USERNAME
+  password: PASSWORD
+  host: localhost
+  socket: /tmp/mysql.sock
+
+test:
+  adapter: mysql2
+  encoding: utf8
+  database: klausurFIX_test
+  username: USERNAME
+  password: PASSWORD
+  host: localhost
+  socket: /tmp/mysql.sock
+
+production:
+  adapter: mysql2
+  encoding: utf8
+  database: klausurFIX_production
+  username: USERNAME
+  password: PASSWORD
+  host: localhost
+  socket: /tmp/mysql.sock

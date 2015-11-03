@@ -1,0 +1,16 @@
+/ Context: nav.navbar.navbar-fixed-top.navbar-light.bg-faded
+
+- if signed_in?
+  ul.nav.navbar-nav
+    / li.nav-item
+  ul.nav.navbar-nav.pull-right
+    li.nav-item
+      = link_to t(:session_form_signout), sessions_path, method: 'delete', class: "btn btn-danger-outline"
+
+- else
+  = form_for :session, url: sessions_path, html: { class: "form-inline navbar-form pull-right" } do |f|
+    = f.text_field :login, class: "form-control", placeholder: t(:session_form_login)
+    |  
+    = f.password_field :password, class: "form-control", placeholder: t(:session_form_password)
+    |  
+    = f.submit t(:session_form_signin), class: "btn btn-primary-outline"

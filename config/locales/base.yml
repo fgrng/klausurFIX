@@ -1,0 +1,11 @@
+de:
+  hello_world: "Hallo Welt"
+  hello_dashboard: "Hallo Dashboard"
+  csrf_forgery: "Verdacht auf CSRF Forgery. Sie wurden gegebenenfalls abgemeldet."
+  require_signin: "Sie müssen angemeldet sein, um diese Aktion auszuführen."
+
+en:
+  csrf_forgery: "CSRF forgery detected. You have been signed out."
+  hello_world: "Hello world"
+  hello_dashboard: "Hello dashboard"
+  require_signin: "Authentication is required to complete this action."

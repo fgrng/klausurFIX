@@ -1,0 +1,22 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+alice:
+  email: alice@example.com
+  username: alice
+  password_digest: $2a$10$hOwY/w3rS4ww9QSc8EDYZurnmCXLssZYcWDMy3o0yhHHZyi8jNEQq
+  valid_email: true
+  valid_email_token: "my token"
+  valid_email_timestamp: 2014-12-24 18:00:00
+  reset_password_token: "token my"
+  reset_password_timestamp: nil
+
+bob:
+  email: bob@example.com
+  username: bob
+  password_digest: $2a$10$UgKcLMYfrrib0vlnFgWiKuMJGIXa.uPkEVPRP1i8mGPz8ohdySE3q
+  valid_email: false
+  valid_email_token: "validate me"
+  valid_email_timestamp: 2015-10-24 19:00:00
+  reset_password_token: nil
+  reset_password_timestamp: nil
+

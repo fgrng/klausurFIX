@@ -1,0 +1,13 @@
+de:
+  session_form_signin: "Anmelden"
+  session_form_signout: "Abmelden"
+
+  session_form_login: "Nutzername / Email"
+  session_form_password: "Passwort"
+
+en:
+  session_form_signin: "Sign in"
+  session_form_signout: "Sign out"
+
+  session_form_login: "username / email"
+  session_form_password: "password"
