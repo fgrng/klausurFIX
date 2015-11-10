@@ -1,4 +1,19 @@
 GIT
+  remote: https://github.com/ogeidix/yard-rails-plugin.git
+  revision: fcfc8809971334132519dffdb3ba4d125aaf212f
+  tag: v0.0.1
+  specs:
+    yard-rails-plugin (0.0.1)
+      yard (> 0.7)
+
+GIT
+  remote: https://github.com/theodorton/yard-activerecord.git
+  revision: 5b2ff7ba7a37dde01c2e73b8e70030f992acfe19
+  specs:
+    yard-activerecord (0.0.15)
+      yard (>= 0.8.3)
+
+GIT
   remote: https://github.com/twbs/bootstrap-rubygem
   revision: 6014a8dd373d12da2d1a2553d81a33a547e4f62f
   specs:
@@ -233,3 +248,6 @@ DEPENDENCIES
   turbolinks
   uglifier
   will_paginate
+  yard
+  yard-activerecord!
+  yard-rails-plugin!

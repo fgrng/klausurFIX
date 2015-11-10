@@ -57,6 +57,9 @@ gem 'slim-rails'
 gem 'draper', '~> 1.3'
 gem 'will_paginate'
 gem 'rb-readline'
+gem 'yard'
+gem 'yard-rails-plugin', :git => 'https://github.com/ogeidix/yard-rails-plugin.git', :tag => 'v0.0.1'
+gem 'yard-activerecord', :git => 'https://github.com/theodorton/yard-activerecord.git'
 
 group :development do
 	gem 'awesome_print'       # console highlighting
